@@ -1,0 +1,15 @@
+Example Database
+ [x] Model find all
+ [x] Soft delete leaves row
+
+Example Session
+ [x] Session simple
+
+Health
+ [x] Is defined app path
+ [x] Base url has been set
+
+Password Hasher
+ [x] Hash can be verified without storing the password
+ [x] Identical passwords receive different salts and hashes
+

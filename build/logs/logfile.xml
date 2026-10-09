@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="C:\laragon\www\webgis\phpunit.dist.xml" tests="7" assertions="12" errors="0" failures="0" skipped="0" time="0.322638">
+    <testsuite name="App" tests="7" assertions="12" errors="0" failures="0" skipped="0" time="0.322638">
+      <testsuite name="ExampleDatabaseTest" file="C:\laragon\www\webgis\tests\database\ExampleDatabaseTest.php" tests="2" assertions="3" errors="0" failures="0" skipped="0" time="0.255891">
+        <testcase name="testModelFindAll" file="C:\laragon\www\webgis\tests\database\ExampleDatabaseTest.php" line="17" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="1" time="0.213574"/>
+        <testcase name="testSoftDeleteLeavesRow" file="C:\laragon\www\webgis\tests\database\ExampleDatabaseTest.php" line="28" class="ExampleDatabaseTest" classname="ExampleDatabaseTest" assertions="2" time="0.042318"/>
+      </testsuite>
+      <testsuite name="ExampleSessionTest" file="C:\laragon\www\webgis\tests\session\ExampleSessionTest.php" tests="1" assertions="1" errors="0" failures="0" skipped="0" time="0.008341">
+        <testcase name="testSessionSimple" file="C:\laragon\www\webgis\tests\session\ExampleSessionTest.php" line="10" class="ExampleSessionTest" classname="ExampleSessionTest" assertions="1" time="0.008341"/>
+      </testsuite>
+      <testsuite name="HealthTest" file="C:\laragon\www\webgis\tests\unit\HealthTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.046573">
+        <testcase name="testIsDefinedAppPath" file="C:\laragon\www\webgis\tests\unit\HealthTest.php" line="12" class="HealthTest" classname="HealthTest" assertions="1" time="0.005691"/>
+        <testcase name="testBaseUrlHasBeenSet" file="C:\laragon\www\webgis\tests\unit\HealthTest.php" line="17" class="HealthTest" classname="HealthTest" assertions="1" time="0.040882"/>
+      </testsuite>
+      <testsuite name="PasswordHasherTest" file="C:\laragon\www\webgis\tests\unit\PasswordHasherTest.php" tests="2" assertions="6" errors="0" failures="0" skipped="0" time="0.011833">
+        <testcase name="testHashCanBeVerifiedWithoutStoringThePassword" file="C:\laragon\www\webgis\tests\unit\PasswordHasherTest.php" line="11" class="PasswordHasherTest" classname="PasswordHasherTest" assertions="4" time="0.005090"/>
+        <testcase name="testIdenticalPasswordsReceiveDifferentSaltsAndHashes" file="C:\laragon\www\webgis\tests\unit\PasswordHasherTest.php" line="21" class="PasswordHasherTest" classname="PasswordHasherTest" assertions="2" time="0.006743"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>

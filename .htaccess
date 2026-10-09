@@ -1,0 +1,17 @@
+Options -Indexes
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    RewriteRule ^(app|vendor|writable|tests)(/|$) - [F,L,NC]
+    RewriteRule ^(resources|layers|styles|data|webfonts)/(.+)$ index.php/$1/$2 [L,QSA,NC]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^ index.php/$0 [L,QSA]
+</IfModule>
+
+<FilesMatch "^(\.env|composer\.(json|lock)|spark)$">
+    Require all denied
+</FilesMatch>
